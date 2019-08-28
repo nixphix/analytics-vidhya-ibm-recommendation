@@ -3,12 +3,12 @@
 
 [Private Leaderboard](https://datahack.analyticsvidhya.com/contest/build-a-recommendation-engine-powered-by-ibm-cloud/pvt_lb):
 
- Score: 0.326319211973979
+- Score: 0.326319211973979
 
 
 Public Leaderboard:
 
- Score: 0.321784658100713
+- Score: 0.321784658100713
 
 # Challenge:
 
@@ -42,7 +42,10 @@ The Django app has two API end points
 ***NOTE: The endpoints have a browsable django rest framework document, can also be accessed via Postman.
 The api are hosted in Heroku, the apps may have been put to sleep by Heroku if there is no web traffic, so please give it a few minuit on first request to spin up the containers.***
 
-  
+
+User Based Recommendation
+---  
+
 
 **End Point**: https://**<YOUR_APP_NAME_HERE>**.herokuapp.com/recommend/user 
 
@@ -84,14 +87,9 @@ The api are hosted in Heroku, the apps may have been put to sleep by Heroku if t
 
 ```
 
- 
-**Screenshots**
 
-- Paste the payload in the content text box and click POST 
-
- 
-
-- The API will return the top k recommendation, scores for those recommendation and the name of the model exposed by the app.
+Items Based Recommendation
+---
 
 
 **End Point**: https://**<YOUR_APP_NAME_HERE>**.herokuapp.com/recommend/items 
@@ -132,6 +130,8 @@ The api are hosted in Heroku, the apps may have been put to sleep by Heroku if t
         "estimator": "ItemSimilarityRecommender" 
     }
 ```
+
+---
 
 
 # API Deployment Instruction
