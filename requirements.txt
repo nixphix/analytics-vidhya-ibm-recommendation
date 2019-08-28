@@ -1,0 +1,6 @@
+django
+gunicorn
+django-heroku
+django-rest-swagger
+djangorestframework
+turicreate
